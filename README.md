@@ -13,16 +13,38 @@
 
 ---
 
-## Tech Stack
+## Technical Stack
 
-`Python` · `Pandas` · `NumPy` · `Matplotlib` · `Seaborn` · `MySQL` · `SQLAlchemy` · `Power BI`
+| Tool | Usage |
+|---|---|
+| **Python** | Automated the end-to-end ETL data pipeline |
+| **Pandas** | Cleaned 22+ disease variants into 10 categories and handled nulls |
+| **NumPy** | Calculated array operations and population-normalized metrics |
+| **Matplotlib** | Visualized initial exploratory disease case distributions |
+| **Seaborn** | Analyzed outbreak trends across seasons and years |
+| **MySQL** | Stored normalized data and executed complex analytical queries |
+| **SQLAlchemy** | Automated batch loading of DataFrames into MySQL |
+| **Power BI** | Built interactive dashboards for regional burden and seasonal trends |
 
 ---
 
 ## ETL Pipeline
 
 ```
-Raw CSV  →  Python (Extract + Transform)  →  MySQL (Load)  →  SQL (Analyze)  →  Power BI (Visualize)
+| ETL Step | Description | Tool |
+|---|---|---|
+| **Extract** | Read Raw Data | **Python (Pandas)** |
+| **↓** | | |
+| **Transform** | Clean and Structure | **Python (Pandas)** |
+| **↓** | | |
+| **Load** | Write to Database | **SQLAlchemy** |
+| **↓** | | |
+| **Storage** | Relational DB | **MySQL** |
+| **↓** | | |
+| **Analyze** | Business Logic | **SQL** |
+| **↓** | | |
+| **Visualize** | Dashboarding | **Power BI** |
+
 ```
 
 The pipeline is implemented across three files:
