@@ -30,7 +30,7 @@
 
 ## ETL Pipeline
 
-```
+
 | ETL Step | Description | Tool |
 |---|---|---|
 | **Extract** | Read Raw Data | **Python (Pandas)** |
@@ -45,7 +45,6 @@
 | **↓** | | |
 | **Visualize** | Dashboarding | **Power BI** |
 
-```
 
 The pipeline is implemented across three files:
 
